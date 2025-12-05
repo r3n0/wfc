@@ -1,97 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Diseño de personajes aleatorios</title>
-		<style>
-			body {
-				font-family: 'Courier New', Courier, monospace;
-				padding: 2rem;
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-				gap: 2rem;
-			}
-			a {
-				display: block;
-				padding: 2rem;
-				box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
-				transition: all 0.3s ease;
-				border-radius: 1rem;
-				text-decoration: none;
-				color: #999;
-			}
-
-			a:hover,
-			a:active {
-				transform: scale(1.1);
-			}
-		</style>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Daniela Guamán</title>
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
-	<body>
-		<a href="./Alex Carrion/">
-			<h3>Alex Carrión</h3>
-		</a>
-		<a href="./Anastaciya Batura/">
-			<h3>Anastaciya Batura</h3>
-		</a>
-		<a href="./Brandon Delgado/">
-			<h3>Brandon Delgado</h3>
-		</a>
-		<!-- <a href="./Rene Martinez/">
-			<h3>René Martínez</h3>
-		</a> -->
-		<a href="./Christian Alvarez/">
-			<h3>Christian Alvarez</h3>
-		</a>
-		<a href="./Daniela Guaman/">
-			<h3>Daniela Guamán</h3>
-		</a>
-		<a href="./Domenica Castollo/">
-			<h3>Domenica Castollo</h3>
-		</a>
-		<a href="./Fernanda Fajardo/">
-			<h3>Fernanda Fajardo</h3>
-		</a>
-		<a href="./Fernando Mora/">
-			<h3>Fernando Mora</h3>
-		</a>
-		<a href="./Glenda Torres/">
-			<h3>Glenda Torres</h3>
-		</a>
-		<a href="./Jazmin Rivadeneira/">
-			<h3>Jazmin Rivadeneira</h3>
-		</a>
-		<a href="./Johanna Llivicura/">
-			<h3>Johanna Llivicura</h3>
-		</a>
-		<a href="./Johnny Morocho/">
-			<h3>Johnny Morocho</h3>
-		</a>
-		<a href="./Mateo Bustos/">
-			<h3>Mateo Bustos</h3>
-		</a>
-		<a href="./Natasha Farez/">
-			<h3>Natasha Farez</h3>
-		</a>
-		<a href="./Nicole Conce/">
-			<h3>Nicole Conce</h3>
-		</a>
-		<a href="./Nicole Lima/">
-			<h3>Nicole Lima</h3>
-		</a>
-		<a href="./Pamela Chitacapa/">
-			<h3>Pamela Chitacapa</h3>
-		</a>
-		<a href="./Paz Orellana/">
-			<h3>Paz Orellana</h3>
-		</a>
-		<a href="./Samantha Bravo/">
-			<h3>Samantha Bravo</h3>
-		</a>
-		<a href="./Sebastian Quezada/">
-			<h3>Sebastián Quezada</h3>
-		</a>
-	</body>
+
+	<body></body>
+
+	<!-- checkbox y restart button -->
+	<form id="form1" name="miFormulario" enctype="text/plain">
+		<input type="range" min="4" max="20" value="10" id="slider" />
+		<label for="slider">N Azulejos</label>
+
+		<input id="bordes" type="checkbox" name="miCheck" />
+		<label for="bordes">Bordes</label>
+		<input type="button" value="Restart" onclick="resetCels()" />
+	</form>
+	<br />
+
+	<!-- import the javascript library file(s) -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"
+		crossorigin="anonymous"
+	></script>
+
+	<!-- import the javascript sketch file -->
+	<script src="./js/reglas.js"></script>
+	<script src="./js/sketch.js"></script>
 </html>
